@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="app">
+     <header class="masthead mb-auto">
+       <div class="inner">
+         <h3 class="masthead-brand">Cover</h3>
+         <nav class="nav nav-masthead justify-content-center">
+
+           <router-link to="/" class="nav-link" >Home</router-link>
+           <router-link to="/features" class="nav-link" >Features</router-link>
+
+           <a class="nav-link" href="#">{{mes}}</a>
+         </nav>
+       </div>
+     </header>
+
+     <main role="main" class="inner cover">
+
+      <router-view></router-view>
+
+     </main>
+
+     <footer class="mastfoot mt-auto">
+       <div class="inner">
+         <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+       </div>
+     </footer>
+   </div>
+   <script src="https://unpkg.com/vue/dist/vue.js"></script>
+   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="components.js" charset="utf-8"></script>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>
